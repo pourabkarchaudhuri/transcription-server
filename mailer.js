@@ -3,13 +3,24 @@
 
 const nodemailer = require('nodemailer');
 
+// const transporter = nodemailer.createTransport({
+//     service: 'gmail',
+//     auth: {
+//            user: 'htlp002@gmail.com',
+//            pass: 'Hexaware321'
+//        }
+//    });
+
 const transporter = nodemailer.createTransport({
     service: 'gmail',
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
     auth: {
-           user: 'htlp002@gmail.com',
-           pass: 'Hexaware321'
-       }
-   });
+                   user: 'htlp002@gmail.com',
+                   pass: 'Hexaware321'
+          }
+});
 const sender = '"NoReply_InnovationLab" <htlp002@gmail.com>';
 
 
