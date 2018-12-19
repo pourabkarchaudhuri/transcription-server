@@ -1,0 +1,16 @@
+{
+  "name": "transcription",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Pourab Karchaudhuri",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "natural": "^0.6.2",
+    "socket.io": "^2.2.0"
+  }
+}
